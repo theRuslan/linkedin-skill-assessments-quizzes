@@ -536,7 +536,7 @@ Table[Column] can be used instead of cell references (C2:C7).
 
 #### Q68. In the worksheet shown below, cell C6 contains the `formula=VLOOKUP(A6,$F$2:$G$10,2,FALSE)`. What is the most likely reason that `#N/A` is returned in cell `C6` instead of mallory's `ID (2H54)`
 
-(missing screenshot)
+![image](https://user-images.githubusercontent.com/23659530/179216823-1ac09896-4807-4bd6-a352-637df79e7b36.png)
 
 - [ ] The absolute/relative cell references in the formula are wrong
 - [ ] Cell A6 is not actualy text its a formula that need to be copied and pasted as a value
@@ -959,7 +959,7 @@ https://support.microsoft.com/en-us/office/print-headings-or-titles-on-every-pag
 
 - [ ] Filter the relevant column, right-click the column head, and select **Remove Duplicates**.
 - [ ] This is possible only with Power Query.
-- [x] With your cursors in the data range, on **Data** tab click **Remove Duplicates**.
+- [x] With the data selected, on the **Data** tab click **Remove Duplicates**.
 - [ ] This is possible only using formulas.
 
 [Reference](https://support.microsoft.com/en-us/office/filter-for-unique-values-or-remove-duplicate-values-ccf664b0-81d6-449b-bbe1-8daaec1e83c2)
@@ -1017,3 +1017,60 @@ https://support.microsoft.com/en-us/office/print-headings-or-titles-on-every-pag
 - [ ] `=AVERAGEIF(G:G,D:D,K2,H:H,5)`
 - [ ] `=AVERAGEIFS(K2,H:H,5,G:G)`
 - [x] `=AVERAGEIFS(G:G,D:D,K2,H:H,5)`
+
+#### Q121. Which feature enables you to quickly sort and reduce data to a subset?
+
+- [ ] data validation
+- [ ] conditional formatting
+- [ ] advanced sort
+- [ ] filters
+
+#### Q122. You have a formula in cell A1. You want to display that formula in cell B1. What function can you use in cell B1?
+
+- [ ] TEXT
+- [x] FORMULATEXT
+- [ ] ISFORMULA
+- [ ] ISTEXT
+
+#### Q123. You want to remove the unprintable characters and unnecessary spaces from column A. What formula would you put into cell B2 to copy down to the rest of the column?
+
+![image](images/Q1233.png)
+
+- [ ] `=ERROR.TYPE(A2)`
+- [x] `=CLEAN(TRIM(A2))`
+- [ ] `=CHOOSE(A2)`
+- [ ] `=TRIM(A2)`
+
+##### Q114. What is the output of the formula `=(8+2*3)/7?`
+
+- [ ] 13
+- [x] 7
+- [ ] 11
+- [ ] 15
+
+#### Q115. The amount of sales tax on each sale is calculated as the selling price times the quantity sold times the sales tax rate. What formula would you use in celle E4 to then be able ro copy that cell to the rest of the column?
+
+(missing screenshot)
+
+- [x] =C4*D4*$B$1
+- [ ] =(C4*D4)*B1
+- [ ] =C4*D4*B1
+- [ ] =C4*D4(*B1)
+
+#### Q116. Which is not a way to edit a formula in a cell?
+
+- [ ] Press F2.
+- [ ] Select the cell and then click in the formula bar.
+- [ ] Double-click the cell
+- [x] Right-click the cell and select **Edit**
+
+#### Q117. What dows this formula do?
+
+```
+=SUM(Sheet1:Sheet4!D18)
+```
+
+- [x] It adds data form all D18 cells in Sheet1, Sheet2, Sheet3, Sheet4
+- [ ] It adds data from cell D18 of Sheet1 and cell D18 of Sheet4
+- [ ] It adds alla data in the range A1:D18 in Sheet1,Shee2, Shee3, and Sheet4
+- [ ] It adds data from cell A1 of Sheet1 and cell D18 of Sheet4
